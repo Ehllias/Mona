@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Icon Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .icon-select-container {
+            display: flex;
+            align-items: center;
+        }
+        .icon-select-container i {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="icon-select-container">
+            <i id="selectIcon" class="fas fa-question-circle"></i>
+            <select class="form-select" id="iconeTopico">
+                <option selected value="">Escolha...</option>
+                <option value="fas fa-solar-panel">Painel solar</option>
+                <option value="fas fa-leaf">Folha</option>
+                <option value="fas fa-recycle">Reciclagem</option>
+                <option value="fas fa-temperature-high">Temperatura alta</option>
+                <option value="fas fa-globe">Globo</option>
+            </select>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const selectElement = document.getElementById("iconeTopico");
+    const iconElement = document.getElementById("selectIcon");
+
+    selectElement.addEventListener("change", function () {
+        const selectedValue = selectElement.value;
+        iconElement.className = selectedValue || "fas fa-question-circle";
+    });
+});
+
+</script>
+</html>
+
+
+
+
+
+
+$(document).ready(function() {
+    $('.navbar-toggler').click(function() {
+      $(this).toggleClass('collapsed');
+      $('.navbar-collapse').toggleClass('show');
+    });
+  });
+  

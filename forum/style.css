@@ -1,0 +1,8 @@
+.icon-select-container {
+    display: flex;
+    align-items: center;
+  }
+  .icon-select-container i {
+    margin-right: 10px;
+  }
+  

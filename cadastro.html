@@ -15,7 +15,7 @@
     
     <style>
         body {
-           background-color:  #144673;
+           background-color:  #F8F9FA;
             margin: 0;
             
         }
@@ -28,16 +28,18 @@
             align-items: center;
             height: calc(110vh - 56px); /* Ajusta a altura para descontar a altura do navbar */
             padding-top: 10px;
+            background-color: #F8F9FA;
         }
 
         .cadastro-box {
-            background-color: #0D1E40;
+            background-color: #F8F9FA;
             padding: 20px;
             border-radius: 10px;
+            border:1px solid #198754;
             box-shadow: 0 0 20px #0000;
             width: 100%;
             max-width: 400px;
-            color: white;
+            color: #198754;
         }
 
         .navbar {
@@ -59,7 +61,7 @@
 
     <div class="cadas-container">
         <div class="cadastro-box">
-            <h1 class="text-center">Criar Conta</h1>
+            <h1 class="text-center btn-criar">Criar Conta</h1>
             <form action="back/processa_cadastro.php" method="post">
                 <div class="form-group">
                     <label for="nome">Nome:</label>

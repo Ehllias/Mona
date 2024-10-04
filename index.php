@@ -20,6 +20,16 @@ $usuarioLogado = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Visitante
     <link rel="stylesheet" href="slides/slider.css">
 </head>
 
+    <script defer="">
+        const button = document.getElementById('toggleTheme');
+        let darkMode = false;
+
+        button.addEventListener('click', () => {
+            darkMode = !darkMode;
+            document.body.classList.toggle('dark-mode', darkMode);
+            button.textContent = darkMode ? 'Mudar para Claro' : 'Mudar para Escuro';
+        });
+    </script>
 <body>
     <!-- Navegação-->
     <nav class="navbar navbar-light bg-light static-top">
@@ -31,6 +41,13 @@ $usuarioLogado = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Visitante
         <a class="btn btn-success remover-borda" href="<?php echo $usuarioLogado === 'Visitante' ? 'login.html' : 'back/logout.php'; ?>" id="loginButton">
             <?php echo $usuarioLogado === 'Visitante' ? 'Login' : 'Deslogar'; ?>
         </a>
+
+<div class="bg-light text-dark">
+
+    <div class="container text-center mt-5">
+        <h1>Tema Claro e Escuro</h1>
+        <button id="toggleTheme" class="btn btn-primary mt-3">Mudar para Escuro</button>
+    </div>
     </div>
 </nav>
 

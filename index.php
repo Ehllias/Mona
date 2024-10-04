@@ -282,7 +282,24 @@ if (usuarioLogado !== 'Visitante') {
     var loginButton = document.getElementById('loginButton');
     loginButton.textContent = 'Login';
 }
-</script>
+
+    
+    <script>
+        const button = document.getElementById('toggleTheme');
+        let darkMode = false;
+
+        button.addEventListener('click', () => {
+            darkMode = !darkMode;
+            document.body.classList.toggle('dark-mode', darkMode);
+            button.textContent = darkMode ? 'Mudar para Claro' : 'Mudar para Escuro';
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    </script>
 
 </body>
 

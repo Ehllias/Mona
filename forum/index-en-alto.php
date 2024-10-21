@@ -19,11 +19,11 @@ $usuarioLogado = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Visitante
   <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.6.12/i18next.min.js"></script>
 
   <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-alto.css">
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-light bg-light static-top">
+  <nav class="navbar navbar-light bg-black static-top">
     <div class="container">
         <a class="navbar-brand" href="../">
             <img class="logo" src="../assets/img/logo nova.svg" alt="Logo AI-SEFER">
@@ -45,7 +45,7 @@ $usuarioLogado = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Visitante
     <div class="row">
       <div class="col-md-3">
         <div class="card mb-3">
-          <div class="card-header">
+          <div class="card-header bg-black">
             <h5 class="card-title"><i class="fas fa-tags"></i>Popular Categories</h5>
           </div>
           <div class="card-body">
@@ -63,7 +63,7 @@ $usuarioLogado = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Visitante
 
       <div class="col-md-6">
         <div class="card mb-3">
-          <div class="card-header">
+          <div class="card-header bg-black">
             <h5 class="card-title"><i class="fas fa-comments"></i> Latest Discussions</h5>
           </div>
           <div class="card-body">
@@ -187,7 +187,7 @@ $usuarioLogado = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Visitante
       </div>
       <div class="col-md-3">
         <div class="card mb-3">
-          <div class="card-header">
+          <div class="card-header bg-black">
             <h5 class="card-title"><i class="fas fa-pen"></i> Join the Conversation</h5>
           </div>
           <div class="card-body">
@@ -197,7 +197,7 @@ $usuarioLogado = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Visitante
         </div>
 
         <div class="card mb-3">
-          <div class="card-header">
+          <div class="card-header bg-black">
             <h5 class="card-title"><i class="fas fa-search"></i> Search Discussions</h5>
           </div>
           <div class="card-body">
@@ -274,7 +274,7 @@ $usuarioLogado = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Visitante
   </main>
 
 
-  <footer class="footer bg-light">
+  <footer class="footer bg-black">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 h-100 text-center text-lg-start my-auto">

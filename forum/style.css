@@ -10,11 +10,53 @@
 
     border: 2px solid black;
     border-radius: 2px;
-
 }
 
 .user-image img {
 
     border: 2px solid white; /* Borda branca para o círculo */
 
+}
+
+/* .btn-circular {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  background-color: #007bff;
+  position: fixed;
+} */
+
+.btn-circular {
+  top: 40%;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #007bff;
+  position: fixed;
+  right: 10px;
+  bottom: 50%;
+  background-color: #007bff;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn-circular:hover,
+.btn-circular:focus,
+.btn-circular:active {
+    background-color: #007bff; 
+}
+
+.btn-circular img {
+  position: absolute;
+  width: 70%;
+  height: 70%;
 }

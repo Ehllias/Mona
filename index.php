@@ -35,19 +35,13 @@ $usuarioLogado = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Visitante
     <nav class="navbar navbar-light bg-light static-top">
     <div class="container">
         <a class="navbar-brand" href="#!">
-            <img class="logo" src="assets/img/logo nova.svg" alt="Logo AI-SEFER">
+            <img class="logo" src="assets/img/logonovas/logosite2.png" alt="Logo AI-SEIFER">
         </a>
         
         <!--<a class="btn btn-success remover-borda" href="<?php echo $usuarioLogado === 'Visitante' ? 'login.html' : 'back/logout.php'; ?>" id="loginButton">
             <?php echo $usuarioLogado === 'Visitante' ? 'Login' : 'Deslogar'; ?>
         </a> -->
 
-<div class="bg-light text-dark">
-
-    <div class="container text-center mt-5">
-        <button id="toggleTheme" class="btn btn-primary mt-3">Mudar para Escuro</button>
-    </div>
-    </div>
 </nav>
 
     <!-- Cabeçalho-->
@@ -215,7 +209,7 @@ $usuarioLogado = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Visitante
         </section>
 
 
-
+        <a href="index-alto.php" class="btn btn-circular"><img src="./assets/preto-e-branco.png" alt="Ícone de altocontraste."></a>
 
         <div class="fixed-buttons">
             <div>

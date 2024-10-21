@@ -8,7 +8,7 @@ $usuarioLogado = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Visitante
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fórum Mona - Sustentabilidade</title>
+  <title>Mona Forum - Sustainability</title>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" crossorigin="anonymous"></script>
@@ -32,30 +32,30 @@ $usuarioLogado = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Visitante
         <!-- <a class="btn btn-success remover-borda" href="<?php echo $usuarioLogado === 'Visitante' ? '../login.html' : '../back/logout.php'; ?>" id="loginButton">
             <?php echo $usuarioLogado === 'Visitante' ? 'Login' : 'Deslogar'; ?>
         </a> -->
-        <a href="">
-          <button id="changeLanguageBtn" class="btn btn-success remover-borda">Mudar para Inglês</button>
+        <a href="index.php">
+          <button id="changeLanguageBtn" class="btn btn-success remover-borda">Move to portuguese</button>
         </a>
     </div>
 </nav>
 
   <main class="container my-5">
-    <h2 class="text-center">Bem-vindo, <?php echo htmlspecialchars($usuarioLogado); ?>!</h2>
-    <p class="text-center">Uma comunidade dedicada à sustentabilidade e ao estilo de vida ecológico.</p>
+    <h2 class="text-center">Welcome <?php echo htmlspecialchars($usuarioLogado); ?>!</h2>
+    <p class="text-center">A community dedicated to sustainability and eco-friendly living.</p>
 
     <div class="row">
       <div class="col-md-3">
         <div class="card mb-3">
           <div class="card-header">
-            <h5 class="card-title"><i class="fas fa-tags"></i> Categorias Populares</h5>
+            <h5 class="card-title"><i class="fas fa-tags"></i>Popular Categories</h5>
           </div>
           <div class="card-body">
             <ul id="categoriasMaisUsadas" class="list-group">
-              <a href="#"><li>Energias Sustentavéis</li></a>
-              <a href="#"><li>Impactos da degradação do solo</li></a>
-              <a href="#"><li>Como melhorar pelos mínimos detalhes</li></a> 
-              <a href="#"><li>Usinas Eólicas</li></a> 
-              <a href="#"><li>Biocombustíveis da cana de açúcar</li></a>
-              <a href="#"><li>Biotecnologia no mundo</li></a>
+              <a href="#"><li>Sustained Powers</li></a>
+              <a href="#"><li>Impacts of soil degradation</li></a>
+              <a href="#"><li>How to improve by the smallest</li></a> 
+              <a href="#"><li>Wind Power Plants</li></a> 
+              <a href="#"><li>Biofuels from sugar-cane</li></a>
+              <a href="#"><li>Biotechnology in the world</li></a>
              
           </div>
         </div>
@@ -64,7 +64,7 @@ $usuarioLogado = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Visitante
       <div class="col-md-6">
         <div class="card mb-3">
           <div class="card-header">
-            <h5 class="card-title"><i class="fas fa-comments"></i> Últimas Discussões</h5>
+            <h5 class="card-title"><i class="fas fa-comments"></i> Latest Discussions</h5>
           </div>
           <div class="card-body">
             <ul class="list-group list-group-flush" id="apitopicos">
@@ -79,12 +79,12 @@ $usuarioLogado = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Visitante
             <strong>Ehllias</strong>
         </div>
     </div>
-    <p class="mt-2" >A sustentabilidade é um princípio que visa equilibrar as necessidades atuais da humanidade sem comprometer a capacidade das gerações futuras de atenderem suas próprias necessidades. É sobre viver de maneira que respeite os limites naturais do planeta.</p>
+    <p class="mt-2" >Sustainability is a principle that aims to balance the current needs of humanity without compromising the ability of future generations to meet their own needs. It’s about living in a way that respects the natural limits of the planet..</p>
 
     <div class="hashtags">
-        <span class="badge bg-secondary">#sustentabilidade</span>
-        <span class="badge bg-secondary">#usinaEolica</span>
-        <span class="badge bg-secondary">#ecologia</span>
+        <span class="badge bg-secondary">#sustainability and sustainability</span>
+        <span class="badge bg-secondary">#TheusineEolica</span>
+        <span class="badge bg-secondary">#ecology</span>
     </div>
   </div>
 </div>
@@ -99,7 +99,7 @@ $usuarioLogado = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Visitante
             <strong>Mestre</strong>
         </div>
     </div>
-    <p class="mt-2">A ecologia em geral é baseada em três pilares principais: ambiental, econômico e social. O pilar ambiental se concentra na conservação dos recursos naturais e na proteção do ecossistema. É sobre reduzir o impacto ambiental e preservar a biodiversidade.</p>
+    <p class="mt-2">Ecology in general is based on three main pillars: environmental, economic and social. The environmental pillar focuses on the conservation of natural resources and the protection of the ecosystem. It is about reducing environmental impact and preserving biodiversity.</p>
 
     <div class="hashtags">
     <span class="badge bg-secondary">#sustentabilidade</span>
@@ -117,7 +117,7 @@ $usuarioLogado = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Visitante
             <strong>Mestre</strong>
         </div>
     </div>
-    <p class="mt-2">Recentemente o pilar econômico trata de criar sistemas econômicos que sejam viáveis a longo prazo. Isso significa promover práticas empresariais que não apenas gerem lucro, mas que também cuidem dos recursos naturais e apoiem o bem-estar das comunidades.</p>
+    <p class="mt-2">Recently the economic pillar is about creating long-term economic systems that are viable. This means promoting business practices that not only generate profit, but also take care of natural resources and support the well-being of communities.</p>
 
     <div class="hashtags">
     <span class="badge bg-secondary">#sustentabilidade</span>
@@ -135,7 +135,7 @@ $usuarioLogado = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Visitante
             <strong>Mestre</strong>
         </div>
     </div>
-    <p class="mt-2">Sobre o pilar social foca em melhorar a qualidade de vida das pessoas. Inclui questões como justiça social, igualdade de oportunidades e direitos humanos. É garantir que todas as pessoas tenham acesso aos recursos necessários para viverem uma vida digna e saudável.</p>
+    <p class="mt-2">About the social pillar focuses on improving the quality of life of people. It includes issues such as social justice, equal opportunities and human rights. It is ensuring that all people have access to the resources they need to live a dignified and healthy life.</p>
 
     <div class="hashtags">
     <span class="badge bg-secondary">#sustentabilidade</span>
@@ -153,7 +153,7 @@ $usuarioLogado = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Visitante
             <strong>Mestre</strong>
         </div>
     </div>
-    <p class="mt-2">Sustentabilidade também significa inovação e adaptação. Envolve a busca por novas tecnologias e métodos que possam reduzir nosso impacto ambiental e promover um desenvolvimento mais equilibrado e justo.</p>
+    <p class="mt-2">Sustainability also means innovation and adaptation. It involves the search for new technologies and methods that can reduce our environmental impact and promote a more balanced and fair development.</p>
 
     <div class="hashtags">
     <span class="badge bg-secondary">#sustentabilidade</span>
@@ -171,7 +171,7 @@ $usuarioLogado = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Visitante
             <strong>Mestre</strong>
         </div>
     </div>
-    <p class="mt-2">Portanto em resumo, sustentabilidade é sobre encontrar um equilíbrio entre as necessidades humanas e a capacidade do nosso planeta de sustentar a vida. É uma abordagem holística que busca a harmonia entre o desenvolvimento econômico, a proteção ambiental e a equidade social.</p>
+    <p class="mt-2">Sustainability is about finding a balance between human needs and our planet’s ability to sustain life. It is a holistic approach that seeks harmony between economic development, environmental protection and social equity.</p>
 
     <div class="hashtags">
     <span class="badge bg-secondary">#sustentabilidade</span>
@@ -188,22 +188,22 @@ $usuarioLogado = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Visitante
       <div class="col-md-3">
         <div class="card mb-3">
           <div class="card-header">
-            <h5 class="card-title"><i class="fas fa-pen"></i> Participe da Conversa</h5>
+            <h5 class="card-title"><i class="fas fa-pen"></i> Join the Conversation</h5>
           </div>
           <div class="card-body">
-            <p>Compartilhe seus pensamentos, ideias e experiências sobre sustentabilidade com outros indivíduos de mentalidade semelhante.</p>
-            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#novoTopicoModal">Criar um Novo Tópico</a>
+            <p>Share your thoughts, ideas, and experiences about sustainability with other like-minded individuals.</p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#novoTopicoModal">Create a new topic</a>
           </div>
         </div>
 
         <div class="card mb-3">
           <div class="card-header">
-            <h5 class="card-title"><i class="fas fa-search"></i> Pesquisar Discussões</h5>
+            <h5 class="card-title"><i class="fas fa-search"></i> Search Discussions</h5>
           </div>
           <div class="card-body">
             <form class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Pesquisar..." aria-label="Pesquisar discussões">
-              <button class="btn btn-outline-primary" type="submit">Pesquisar</button>
+              <input type="text" class="form-control" placeholder="Search forum..." aria-label="Search Discussions">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
             </form>
           </div>
         </div>
@@ -214,64 +214,64 @@ $usuarioLogado = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Visitante
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Criar um Novo Tópico</h5>
+            <h5 class="modal-title">Create a new topic</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
           <div class="modal-body">
             <form action="inserir.php" method="post">
               <div class="mb-3">
-                <label for="tituloTopico" class="form-label">Título do Tópico</label>
+                <label for="tituloTopico" class="form-label">Title topic</label>
                 <input type="text" class="form-control" id="tituloTopico">
               </div>
               <div class="mb-3">
-                <label for="categoriaTopico" class="form-label">Categoria</label>
+                <label for="categoriaTopico" class="form-label">Category</label>
                 <select class="form-select" id="categoriaTopico">
                   <!-- Opções existentes -->
-                  <option>Energia renovável</option>
-                  <option>Vida sustentável</option>
-                  <option>Produtos ecológicos</option>
-                  <option>Mudanças climáticas</option>
-                  <option>Ativismo ambiental</option>
+                  <option>Renewable energy</option>
+                  <option>Sustainable living</option>
+                  <option>Ecological products</option>
+                  <option>Climate change</option>
+                  <option>Environmental activism</option>
                   <!-- Novas opções -->
-                  <option>Conservação da água</option>
+                  <option>Water conservation</option>
                   <option>Agricultura sustentável</option>
-                  <option>Educação ambiental</option>
-                  <option>Transporte verde</option>
+                  <option>Environmental education</option>
+                  <option>Green transport</option>
                   <option>Poluição zero</option>
                 </select>
               </div>
               <div class="mb-3">
-                <label for="iconeTopico" class="form-label">Ícone</label>
+                <label for="iconeTopico" class="form-label">Icon</label>
                 <div class="icon-select-container">
                   <i id="selectIcon" class="fas fa-question-circle"></i>
                   <select class="form-select" id="iconeTopico">
                     <!-- Opções existentes -->
-                    <option value="fas fa-solar-panel">Painel solar</option>
-                    <option value="fas fa-leaf">Folha</option>
-                    <option value="fas fa-recycle">Reciclagem</option>
-                    <option value="fas fa-temperature-high">Temperatura alta</option>
-                    <option value="fas fa-globe">Globo</option>
+                    <option value="fas fa-solar-panel">Solar panel</option>
+                    <option value="fas fa-leaf">Tree leaves</option>
+                    <option value="fas fa-recycle">Recycling</option>
+                    <option value="fas fa-temperature-high">High temperature</option>
+                    <option value="fas fa-globe">Planet</option>
                     <!-- Novas opções -->
-                    <option value="fas fa-water">Água</option>
-                    <option value="fas fa-seedling">Plantação</option>
-                    <option value="fas fa-graduation-cap">Educação</option>
-                    <option value="fas fa-bicycle">Bicicleta</option>
-                    <option value="fas fa-wind">Energia eólica</option>
+                    <option value="fas fa-water">Water</option>
+                    <option value="fas fa-seedling">Plantation</option>
+                    <option value="fas fa-graduation-cap">Education</option>
+                    <option value="fas fa-bicycle">Digital Waste</option>
+                    <option value="fas fa-wind">Wild power</option>
                   </select>
                 </div>
               </div>
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-            <button type="button" class="btn btn-primary" id="salvarTopico">Salvar</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" id="salvarTopico">Save</button>
           </div>
         </div>
       </div>
     </div>
-    <button id="toggleColorBtn" class="btn btn-toggle">Trocar Cor</button>
-  </main>
+    <img id="toggleColorBtn" href="./assets/img/troca-cor.png" class="btn btn-toggle" style="Width: 15px, heath: 15px, translatepxX:150;"><button id="toggleColorBtn" class="btn btn-toggle"></button></img>
 
+  </main>
 
 
   <footer class="footer bg-light">
@@ -279,15 +279,15 @@ $usuarioLogado = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Visitante
         <div class="row">
             <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
                 <ul class="list-inline mb-2">
-                    <li class="list-inline-item"><a href="#!">Sobre</a></li>
+                    <li class="list-inline-item"><a href="#!">About</a></li>
                     <li class="list-inline-item">⋅</li>
-                    <li class="list-inline-item"><a href="#!">Contato</a></li>
+                    <li class="list-inline-item"><a href="#!">Contact</a></li>
                     <li class="list-inline-item">⋅</li>
-                    <li class="list-inline-item"><a href="#!">Termos de uso</a></li>
+                    <li class="list-inline-item"><a href="#!">Terms of use</a></li>
                     <li class="list-inline-item">⋅</li>
-                    <li class="list-inline-item"><a href="#!">Política de Privacidade</a></li>
+                    <li class="list-inline-item"><a href="#!">Privacy Policy</a></li>
                 </ul>
-                <p class="text-muted small mb-4 mb-lg-0">&copy; AI-SEFER 2024. Todos os direitos reservados.</p>
+                <p class="text-muted small mb-4 mb-lg-0">&copy; AI-SEFER 2024. Copyright All Rights Reserved.</p>
             </div>
             <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
                 <ul class="list-inline mb-0">
@@ -369,13 +369,38 @@ $(document).ready(function() {
       "themeColor": "#2563eb",
       "allowedOrigins": []
   });
-
-  document.getElementById('toggleColorBtn').addEventListener('click', function() {
-      this.classList.toggle('alt');
-  });
-    
 </script>
+<script>
+    document.getElementById('changeLanguageBtn').addEventListener('click', function() {
+      i18next.changeLanguage('en', function(err, t) {
+        updateContent();
+      });
+    });
 
+    function updateContent() {
+      document.querySelectorAll('[data-i18n]').forEach(function(element) {
+        element.innerText = i18next.t(element.getAttribute('data-i18n'));
+      });
+    }
+
+    i18next.init({
+      lng: 'pt', // Idioma inicial
+      resources: {
+        en: {
+          translation: {
+            "greeting": "Hello, World!",
+            "question": "How are you?"
+          }
+        },
+        pt: {
+          translation: {
+            "greeting": "Olá, Mundo!",
+            "question": "Como você está?"
+          }
+        }
+      }
+    }, function(err, t) {
+      updateContent(); // Inicializa com o conteúdo em português
     
 
 </html>

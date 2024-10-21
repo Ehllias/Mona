@@ -1,0 +1,59 @@
+/* arquivo de estilos css */
+body {
+    background-color: #000000; /* Fundo preto */
+    color: #FFFFFF; /* Texto branco */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #FFD700; /* Texto dourado para títulos */
+}
+
+a {
+    color: #00FF00; /* Links verdes */
+}
+
+a:hover {
+    color: #FF4500; /* Links em laranja escuro ao passar o mouse */
+}
+
+button {
+    background-color: #FFFFFF; /* Fundo branco para botões */
+    color: #000000; /* Texto preto para botões */
+    border: 2px solid #FFFFFF; /* Borda branca */
+}
+
+button:hover {
+    background-color: #FFD700; /* Fundo dourado ao passar o mouse */
+    color: #000000; /* Texto preto */
+}
+
+body .card-body{
+    background-color: #000000; /* Fundo preto */
+    color: #FFFFFF; /* Texto branco */
+    padding: 20px;
+}
+
+.card-title{
+    background-color: #000000; /* Fundo preto */
+    color: #FFFFFF; /* Texto branco */
+    padding: 20px;
+}
+
+.high-contrast {
+    background-color: #FFFFFF; /* Fundo branco */
+    color: #000000; /* Texto preto */
+    border: 2px solid #FFFFFF; /* Borda branca */
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.high-contrast:hover {
+    background-color: #FFD700; /* Fundo dourado ao passar o mouse */
+    color: #000000; /* Texto preto */
+}
+
+footer {
+    background-color: #000000; /* Fundo preto */
+    color: #FFFFFF; /* Texto branco */
+    padding: 20px;
+}

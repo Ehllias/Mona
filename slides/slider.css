@@ -1,4 +1,6 @@
-
+.title-principal{
+  color: #000;
+}
 
 .saiba-mais {
   color: rgb(255, 255, 255);
@@ -63,5 +65,7 @@
   opacity: 1;  /* Show on hover */
 }
 
-
+.fixef-buttons{
+  translateX:80px;
+}
 

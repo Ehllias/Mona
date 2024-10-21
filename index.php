@@ -37,15 +37,14 @@ $usuarioLogado = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Visitante
         <a class="navbar-brand" href="#!">
             <img class="logo" src="assets/img/logo nova.svg" alt="Logo AI-SEFER">
         </a>
-        <h1>Bem-vindo, <?php echo htmlspecialchars($usuarioLogado); ?>!</h1>
-        <a class="btn btn-success remover-borda" href="<?php echo $usuarioLogado === 'Visitante' ? 'login.html' : 'back/logout.php'; ?>" id="loginButton">
+        
+        <!--<a class="btn btn-success remover-borda" href="<?php echo $usuarioLogado === 'Visitante' ? 'login.html' : 'back/logout.php'; ?>" id="loginButton">
             <?php echo $usuarioLogado === 'Visitante' ? 'Login' : 'Deslogar'; ?>
-        </a>
+        </a> -->
 
 <div class="bg-light text-dark">
 
     <div class="container text-center mt-5">
-        <h1>Tema Claro e Escuro</h1>
         <button id="toggleTheme" class="btn btn-primary mt-3">Mudar para Escuro</button>
     </div>
     </div>
@@ -69,7 +68,6 @@ $usuarioLogado = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Visitante
                      <div class="carousel-item active" data-bs-interval="5000">
                          <img src="slides/image/svs5.gif" alt="" class="d-block w-100">
                          <div class="carousel-caption"> </div>
-                           
                      </div>
                      
                      <div class="carousel-item" data-bs-interval="5000">
@@ -120,13 +118,14 @@ $usuarioLogado = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Visitante
         <section class="features-icons bg-light text-center textoarrumado">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
-                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                            <div class="features-icons-icon d-flex">
-                                <img src="assets/img/reciclagem.svg"
-                                    alt="Animação de lixeira com símbolo de reciclagem, demonstrando a conscientização ambiental. A lixeira se forma progressivamente, destacando o compromisso com a reciclagem. Um ícone de sustentabilidade e cuidado ambiental, representado pela animação da lixeira e seu distintivo de reciclagem."
-                                    width="100%" height="100%">
-                            </div>
+                    <h1 class="title-principal">Bem-vindo <?php echo htmlspecialchars($usuarioLogado); ?>!</h1>   
+                        <div class="col-lg-6">
+                            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                                <div class="features-icons-icon d-flex">
+                                    <img src="assets/img/reciclagem.svg"
+                                        alt="Animação de lixeira com símbolo de reciclagem, demonstrando a conscientização ambiental. A lixeira se forma progressivamente, destacando o compromisso com a reciclagem. Um ícone de sustentabilidade e cuidado ambiental, representado pela animação da lixeira e seu distintivo de reciclagem."
+                                        width="100%" height="100%">
+                                </div>
                             <h3>Objetivo</h3>
                             <p class="lead">
                                 O Fórum de Sustentabilidade é mais do que um espaço virtual: é um movimento, uma
@@ -147,7 +146,7 @@ $usuarioLogado = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Visitante
                                 especificamente adaptado para abordar tópicos sustentáveis.</p>
                         </div>
                     </div>
-                    <p class="button"><a href="forum" class="ir-forum btn">Ir para o forum</a></p>
+                    <p class="button"><a href="forum/index.php" class="ir-forum btn">Ir para o forum</a></p>
                 </div>
             </div>
         </section>
@@ -284,9 +283,28 @@ $usuarioLogado = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Visitante
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/scripts.js"></script>
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script>
+         let fontSize = 1.25; // Tamanho de fonte inicial em rem
+
+function zoomIn() {
+  fontSize += 0.1; // Ajustar o valor conforme necessário
+  updateFontSize();
+}
+
+function zoomOut() {
+  fontSize -= 0.1; // Ajustar o valor conforme necessário
+  updateFontSize();
+}
+
+function updateFontSize() {
+    const leadElements = document.querySelectorAll('.lead');
+    leadElements.forEach((element) => {
+      element.style.fontSize = fontSize + 'rem';
+    });
+  }
+    </script>
 
     <script>
 var usuarioLogado = <?php echo json_encode($usuarioLogado); ?>;

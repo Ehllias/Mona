@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    #login {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #bef57c;
+    }
+
+    .login-box, .register-box {
+      padding: 30px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .register-box {
+      background-color: #fff;
+    }
+
+    .form-control {
+      border-radius: 20px;
+      
+    }
+
+    .btn-social {
+      border-radius: 30px;
+      margin-bottom: 10px;
+      display: block;
+      width: 100%;
+    }
+
+    .btn-google {
+      background-color: white;
+      border: 1px solid black;
+      color: #4285F4;
+    }
+
+    .btn-facebook {
+      border: 1px solid rgb(33, 33, 255);
+      background-color: rgb(33, 33, 255);
+      color: #f1f1f1;
+    }
+
+    .btn-github {
+      border: 1px solid rgb(0, 0, 0);
+      background-color: #000000;
+      color: #f6f8fa;
+    }
+
+    .custom-select, .form-control {
+      border-radius: 30px;
+    }
+
+    .gender-group {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .gender-group label {
+      margin-right: 10px;
+    }
+
+    .btn-register {
+      background-color: #28a745;
+      color: #fff;
+      border-radius: 30px;
+    }
+
+    .btn-success{
+      border-radius: 30px;
+    }
+
+    .forgot-password {
+      font-size: 0.9rem;
+    }
+
+    .forgot-password a {
+      color: #5B7C5A;
+    }
+
+    .terms-text {
+      font-size: 0.8rem;
+    }
+
+    .terms-text a {
+      color: #5B7C5A;
+    }
+
+    #google{
+      width: 9%;
+    }
+    #facebook{
+      width: 10%;
+    }
+    #github{
+      width: 13%;
+    }
+
+    #loginn{
+      background-color: #fff;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <button id="toggleLanguageButton" style="position: fixed; bottom: 20px; right: 20px;" class="btn btn-secondary"></button>
+    <div class="row w-100" id="login">
+     
+      <div class="col-md-3" >
+        <div class="login-box"id="loginn">
+          <h3 class="text-center mb-4" id="bemvindo">Bem-vindo de Volta!</h3>
+          <button class="btn btn-social btn-google" id="gogle" ><img src="assets/img/google2.png" alt="" id="google"> Fazer login com o Google</button>
+          <button class="btn btn-social btn-facebook" id="face"><img src="assets/img/facebook2.png" alt="" id="facebook">Fazer login com o Facebook</button>
+          <button class="btn btn-social btn-github" id="git"><img src="assets/img/git2.png" alt="" id="github">Fazer login com o Git Hub</button>
+          
+          <hr class="my-4">
+
+          <form>
+            <div class="form-group mb-3" id="email">
+              <input type="text" class="form-control" placeholder="E-mail ou nome de usuário">
+            </div>
+            <div class="form-group " id="senha">
+              <input type="password" class="form-control" placeholder="Senha">
+            </div>
+            <button type="submit" class="btn btn-success btn-block" id="entrar">Entrar</button>
+            <p class="forgot-password text-center mt-3" id="esqueceu">
+              Esqueceu sua senha? <a href="#" id="cliqueaqui">Clique aqui</a>.
+            </p>
+          </form>
+        </div>
+      </div>
+
+      
+      <div class="col-md-5">
+        <div class="register-box">
+          <h3 class="text-center mb-4" id="cadastrar">Cadastre-se Aqui</h3>
+          <form>
+            <div class="form-group mb-4" id="nome">
+              <input type="text" class="form-control" placeholder="Nome ">
+            </div>
+
+            <div class="form-group mb-4" id="sobrenome">
+              <input type="text" class="form-control" placeholder="Sobrenome">
+            </div>
+
+            <div class="form-group mb-4" id="celular">
+              <input type="email" class="form-control" placeholder="Celular ou e-mail">
+            </div>
+
+            <div class="form-group mb-4">
+              <input type="password" class="form-control" placeholder="Senha">
+            </div>
+
+            <div class="form-group mb-4">
+              <input type="password" class="form-control" placeholder="Confirmar Senha">
+            </div>
+            
+
+
+            <button type="submit" class="btn btn-register btn-block" id="cadastro">Cadastrar-se</button>
+            <p class="terms-text text-center mt-3" id="politica">
+              Ao clicar em Cadastre-se, você concorda com nossos <a href="#">Termos</a>, 
+              <a href="#">Política de Privacidade</a> e <a href="#">Política de Cookies</a>.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const originalText = {
+      objectiveTitle: document.querySelectorAll("#bemvindo")[0].innerText,
+      objectiveTitle1: document.querySelectorAll("#gogle")[0].innerText,
+      objectiveTitle2: document.querySelectorAll("#face")[0].innerText,
+      objectiveTitle3: document.querySelectorAll("#git")[0].innerText,
+      objectiveTitle4: document.querySelectorAll("#entrar")[0].innerText,
+      objectiveTitle5: document.querySelectorAll("#cadastrar")[0].innerText,
+      objectiveTitle6: document.querySelectorAll("#cadastro")[0].innerText,
+      objectiveTitle7: document.querySelectorAll("#politica")[0].innerText,
+      objectiveTitle8: document.querySelectorAll("#esqueceu")[0].innerText,
+};
+
+    const translatedText = {
+    
+      objectiveTitle: "Welcome Back!",
+      objectiveTitle1: "Sign in with Google",
+      objectiveTitle2: "Sign in with Facebook",
+      objectiveTitle3: "Sign in with Git Hub",
+      objectiveTitle4: "to enter",
+      objectiveTitle5: "Register Here",
+      objectiveTitle6: "Register",
+      objectiveTitle7: "By clicking Register, you agree to our Terms, Privacy Policy and Cookies Policy.",
+      objectiveTitle8: "Forgot your password? Click here.",
+};
+
+  let currentLanguage = 'pt';
+
+  function toggleLanguage() {
+    currentLanguage = currentLanguage === 'pt' ? 'en' : 'pt';
+    
+    document.querySelectorAll("#bemvindo")[0].innerText = currentLanguage === 'en' ? translatedText.objectiveTitle : originalText.objectiveTitle;
+    document.querySelectorAll("#gogle")[0].innerText = currentLanguage === 'en' ? translatedText.objectiveTitle1 : originalText.objectiveTitle1;
+    document.querySelectorAll("#face")[0].innerText = currentLanguage === 'en' ? translatedText.objectiveTitle2 : originalText.objectiveTitle2;
+    document.querySelectorAll("#git")[0].innerText = currentLanguage === 'en' ? translatedText.objectiveTitle3 : originalText.objectiveTitle3;
+    document.querySelectorAll("#entrar")[0].innerText = currentLanguage === 'en' ? translatedText.objectiveTitle4 : originalText.objectiveTitle4;
+    document.querySelectorAll("#cadastrar")[0].innerText = currentLanguage === 'en' ? translatedText.objectiveTitle5 : originalText.objectiveTitle5;
+    document.querySelectorAll("#cadastro")[0].innerText = currentLanguage === 'en' ? translatedText.objectiveTitle6 : originalText.objectiveTitle6;
+    document.querySelectorAll("#politica")[0].innerText = currentLanguage === 'en' ? translatedText.objectiveTitle7 : originalText.objectiveTitle7;
+    document.querySelectorAll("#esqueceu")[0].innerText = currentLanguage === 'en' ? translatedText.objectiveTitle8 : originalText.objectiveTitle8;
+   
+
+    const button = document.getElementById("toggleLanguageButton");
+    
+    button.innerHTML = currentLanguage === 'en'
+        
+        ? '<img src="assets/img/EUA1.png" alt="Inglês">' 
+        : '<img src="assets/img/brasil.jpg" alt="Português">';
+    
+};
+
+
+document.getElementById("toggleLanguageButton").addEventListener("click", toggleLanguage);
+</script>
+
+</body>
+</html>

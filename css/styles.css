@@ -10975,8 +10975,6 @@ h1{
   border: none;
 }
 
-
-
 .button {
   text-decoration: none;
   display: inline-block;
@@ -11014,10 +11012,111 @@ h1{
   color: #fff;
 }
 
- body {
+body {
             transition: background-color 0.3s, color 0.3s;
         }
 .dark-mode {
-            background-color: #333;
-            color: white;
-        }
+  background-color: #333;
+  color: white;
+}
+#login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e8fccf;
+}
+
+.login-box, .register-box {
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.register-box {
+  background-color: #fff;
+}
+
+.form-control {
+  border-radius: 20px;
+}
+
+.btn-social {
+  border-radius: 30px;
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
+}
+
+.btn-google {
+  background-color: white;
+  border: 1px solid black;
+  color: #4285F4;
+}
+
+.btn-facebook {
+  border: 1px solid rgb(33, 33, 255);
+  background-color: rgb(33, 33, 255);
+  color: #f1f1f1;
+}
+
+.btn-github {
+  border: 1px solid rgb(0, 0, 0);
+  background-color: #000000;
+  color: #f6f8fa;
+}
+
+.custom-select, .form-control {
+  border-radius: 30px;
+}
+
+.gender-group {
+  display: flex;
+  justify-content: space-around;
+}
+
+.gender-group label {
+  margin-right: 10px;
+}
+
+.btn-register {
+  background-color: rgb(33, 33, 255);
+  color: #fff;
+  border-radius: 30px;
+}
+
+.btn-success{
+  border-radius: 30px;
+}
+
+.forgot-password {
+  font-size: 0.9rem;
+}
+
+.forgot-password a {
+  color: rgb(33, 33, 255);
+}
+
+.terms-text {
+  font-size: 0.8rem;
+}
+
+.terms-text a {
+  color: rgb(33, 33, 255);
+}
+
+#google{
+  width: 9%;
+}
+
+#facebook{
+  width: 10%;
+}
+#github{
+  width: 13%;
+}
+
+#loginn{
+  background-color: #fff;
+}

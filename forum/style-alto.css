@@ -4,11 +4,11 @@ body {
     color: #FFFFFF; /* Texto branco */
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .ir-forum {
     color: #FFD700; /* Texto dourado para títulos */
 }
 
-a {
+a, .button {
     color: #00FF00; /* Links verdes */
 }
 

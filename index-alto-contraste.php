@@ -18,8 +18,8 @@ $usuarioLogado = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Visitante
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="slides/slider.css">
+    <link rel="stylesheet" href="forum/style-alto.css">
     <link rel="stylesheet" href="forum/style.css">
-
 </head>
 
     <script defer="">
@@ -34,10 +34,10 @@ $usuarioLogado = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Visitante
     </script>
 <body>
     <!-- Navegação-->
-    <nav class="navbar navbar-light bg-light static-top">
+    <nav class="navbar navbar-light bg-black static-top">
     <div class="container">
         <a class="navbar-brand" href="#!">
-            <img class="logo" src="assets/img/logonovas/logosite2.png" alt="Logo AI-SEIFER">
+            <img class="logo" src="assets/img/logonovas/logo branca-01.png" alt="Logo AI-SEIFER">
         </a>
         
         <!--<a class="btn btn-success remover-borda" href="<?php echo $usuarioLogado === 'Visitante' ? 'login.html' : 'back/logout.php'; ?>" id="loginButton">
@@ -165,7 +165,7 @@ $usuarioLogado = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Visitante
 
                 <div class="row g-0">
                     <div class="col-lg-6 text-white showcase-img"
-                        style="background-image: url('assets/img/logonovas/logosite1.png'); background-size: contain; background-position: center; background-repeat: no-repeat;">
+                        style="background-image: url('assets/img/logonovas/logo branca -02-01.png'); background-size: contain; background-position: center; background-repeat: no-repeat;">
                     </div>
                     <div class="col-lg-6 my-auto showcase-text ">
                         <h2>Sobre a AI-SEFER</h2>
@@ -208,10 +208,7 @@ $usuarioLogado = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Visitante
                 </div>
             </div>
         </section>
-
-
-        <a href="index-alto-contraste.php" class="btn btn-circular"><img src="./assets/preto-e-branco.png" alt="Ícone de altocontraste."></a>
-
+        <a href="index.php" class="btn btn-circular"><img src="./assets/preto-e-branco.png" alt="Ícone de altocontraste."></a>
         <div class="fixed-buttons">
             <div>
                 <button class="btn btn-primary" onclick="zoomIn()">
@@ -227,7 +224,7 @@ $usuarioLogado = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Visitante
         </section>
     </main>
     <!-- Footer-->
-    <footer class="footer bg-light">
+    <footer class="footer bg-black">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
